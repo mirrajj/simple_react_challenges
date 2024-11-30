@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+  .readmore{
+    @apply hidden;
+    
+  }
+  .readmore.active{
+    @apply block;
+  }
+}

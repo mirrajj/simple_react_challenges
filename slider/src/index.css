@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .current {
+    transition: transform 0.5s ease, left 0.5s ease ;
+    left: 0;
+  }
+  
+  .next {
+    transition: transform 0.5s ease, left 0.5s ease ;
+    left: 240px;
+    @apply absolute;
+  }
+  
+  .prev {
+    transition: transform 0.5s ease, left 0.5s ease ;
+    left: -240px;
+    @apply absolute;
+  }
+}
